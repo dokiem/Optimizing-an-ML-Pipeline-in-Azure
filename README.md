@@ -53,17 +53,17 @@ Using BanditPolicy with these parameters improves resource management efficiency
 Azure AutoML tested multiple models on the training dataset, tuning hyperparameters to find the optimal model with higher accuracy.
 The best result model was 'MaxAbsScaler LightGBM' with accuracy was 0.91555387. The second one is VotingEnsemble with accuracy was 0.91540212.
 
-<img align="center" width="700" height="300" src="https://github.com/dokiem/Ex1/blob/main/images/AutoML-Best.png">
+<img align="center" width="700" height="300" src="https://github.com/dokiem/Optimizing-an-ML-Pipeline-in-Azure/blob/main/images/AutoML-Best.png">
 
 ## Pipeline comparison
 
 The best performing model was the AutoML model, we had best model ID "AutoML_6f7e7e95-7c34-432b-bd0b-2f521143bb03_0" with the accuracy was 0.91555387 and the algorithm used was MaxAbsScaler LightGBM.
 
-<img align="center" width="700" height="300" src="https://github.com/dokiem/Ex1/blob/main/images/AutoML.png">
+<img align="center" width="700" height="300" src="https://github.com/dokiem/Optimizing-an-ML-Pipeline-in-Azure/blob/main/images/AutoML.png">
 
 For the HyperDrive model with ID "HD_0cad047f-e345-4a80-b3c6-2a07f277c86e_3". It use a Scikit-learn Logistic Regression model, using HyperDrive to optimize hyperparameters. The accuracy is "0.9094082" with hyperparameters : {"--C": 0.7, "--max_iter": 60}
 
-<img align="center" width="700" height="300" src="https://github.com/dokiem/Ex1/blob/main/images/HyperDrive.png">
+<img align="center" width="700" height="300" src="https://github.com/dokiem/Optimizing-an-ML-Pipeline-in-Azure/blob/main/images/HyperDrive.png">
 
 Logistic Regression is simple, interpretable, and quick, but might need additional techniques to handle imbalanced data effectively.
 LightGBM with MaxAbsScaler is powerful and handles imbalanced data more natively, making it a strong choice for large, complex datasets where performance is critical.
@@ -75,4 +75,4 @@ So, I think I can use resampling techniques or find some other method to deal wi
 
 ## Proof of cluster clean up
 
-<img align="center" width="700" height="300" src="https://github.com/dokiem/Ex1/blob/main/images/Cluster-Deleting.png">
+<img align="center" width="700" height="300" src="https://github.com/dokiem/Optimizing-an-ML-Pipeline-in-Azure/blob/main/images/Cluster-Deleting.png">
